@@ -1,1 +1,5 @@
 <h2>New Table for monopoly cards {{ tableId }}</h2>
+
+<ul *ngFor="let p of table.players">
+  <li>{{p.name}}</li>
+</ul>
