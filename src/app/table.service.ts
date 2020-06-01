@@ -14,9 +14,11 @@ export class TableService {
 
     let player1 = new Player();
     player1.name = "Mukesh";
+    table.players.push(player1);
 
     let player2 = new Player();
     player2.name = "Subodh";
+    table.players.push(player2);
 
     return table;
   }
