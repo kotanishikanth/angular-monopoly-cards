@@ -1,7 +1,9 @@
-import {player} from './player'
+import {Player} from './player'
+import {Card} from './card'
 
 export class Table {
   id:string;
   hostid:string;
-  players:player[]
+  players:Player[];
+  cards:Card[];
 }
