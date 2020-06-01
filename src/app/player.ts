@@ -4,4 +4,8 @@ export class Player {
   id:string;
   name:string;
   cards:Card[]
+
+  constructor(){
+    this.cards = [];
+  }
 }

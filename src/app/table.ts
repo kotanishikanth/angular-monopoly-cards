@@ -6,4 +6,10 @@ export class Table {
   hostid:string;
   players:Player[];
   cards:Card[];
+
+  constructor(){
+    this.players = [];
+    this.cards = [];
+  }
+
 }
