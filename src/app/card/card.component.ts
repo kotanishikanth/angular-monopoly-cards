@@ -17,7 +17,6 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.card.color = "green"
   }
 
   toggleCardSize(){

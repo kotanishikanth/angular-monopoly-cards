@@ -17,8 +17,7 @@ export class TableComponent implements OnInit {
   table: Table;
 
   firstCard:Card = new Card();
-
-
+  
   constructor(private tableService: TableService ) { }
 
   ngOnInit() {
