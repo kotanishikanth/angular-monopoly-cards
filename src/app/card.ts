@@ -1,5 +1,5 @@
 export class Card {
-  name:string;
+  title:string;
   color:string;
   type: 'property' | 'money' | 'special'
 }

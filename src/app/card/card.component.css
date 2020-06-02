@@ -1,4 +1,24 @@
 
 .card-outer{
   border: 1px solid black;
+  width: 200px;
+  height: 320px;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.card-inner{
+  position: relative;
+  width: 190px;
+  min-height: 80px;
+  margin: 5px;
+}
+
+.title{
+  position: relative;
+  font-size: 25px;
+  color: white;
+  top: 10px;
+  bottom: 10px;
 }

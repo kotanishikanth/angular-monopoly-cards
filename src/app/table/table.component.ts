@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { TableService } from '../table.service';
 import { Table } from '../table';
 
+import { Card } from '../card';
+
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -10,19 +12,26 @@ import { Table } from '../table';
 
 export class TableComponent implements OnInit {
 
-  tableId:number = 0;
+  hostPlayer:any;
+  myId:string;
   table: Table;
 
-  get hostPlayer(){
-    let hostPlayer = this.table.players.find(x => x.id == this.table.hostid);
-    if(hostPlayer) return hostPlayer;
-    else return {name: "System"};
-  }
+  firstCard:Card = new Card();
+
 
   constructor(private tableService: TableService ) { }
 
   ngOnInit() {
     this.table = this.tableService.getTable(1);
+
+    this.hostPlayer = this.table.players.find(x => x.id == this.table.hostid);
+    if(this.hostPlayer) {}
+    else this.hostPlayer = {name: "System"};
+
+    this.firstCard = new Card();
+    this.firstCard.color = "red"
+    this.firstCard.title = "Med City"
+
   }
 
 }
